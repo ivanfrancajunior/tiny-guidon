@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual Tiny</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1e1e2f;
+            color: #ffffff;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #2c2c3e;
+            height: 100vh;
+            position: fixed;
+            padding: 1rem;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            color: #50fa7b;
+            font-size: 1.2rem;
+        }
+        .sidebar a {
+            color: #ccc;
+            display: block;
+            margin: 0.5rem 0;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            color: #50fa7b;
+        }
+        .content {
+            margin-left: 260px;
+            padding: 2rem;
+            max-width: 900px;
+        }
+        h1, h2, h3, h4 {
+            color: #50fa7b;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+        pre, code {
+            background: #3c3c4e;
+            color: #f8f8f2;
+            padding: 0.5rem;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: #444;
+            margin: 2rem 0;
+        }
+        a { color: #8be9fd; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Manual Tiny</h2>
+            <a href="#introducao">1. Introdução</a>
+            <a href="#interface">Interface do Tiny</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#busca">Busca</a>
+            <a href="#cadastro">Cadastro</a>
+            <a href="#importacao">Importação</a>
+            <a href="#fim">Final</a>
+        </nav>
+        <main class="content">
+            <h1>Manual de Como Utilizar o Tiny</h1>
+
+<h2><strong>1. Introdução</strong></h2>
+
+<ul>
+<li><strong>Objetivo da Apresentação</strong> é de explicar como utilizar o Tiny de forma eficiente no fluxo de trabalho da empresa.</li>
+</ul>
+
+<p>A idéia é mostrar o uso básico do Tiny pros novos usuários e pros antigos que tenham experiencia ou não com o sistema.</p>
+
+<p>Na Guidon usamos o Tiny como forma de manter o controle de estoque, entrada e saida de material, geração e NF entre outras mas no nosso caso o uso do sistema é voltado <strong>pra tentar manter da forma mais fiel possivel os produtos fisicos e a tabela-mãe</strong>.</p>
+
+<h3>Inteterface do Tiny: - Telas iniciais</h3>
+
+<p>Pra acessar o sistema deve-se ter usuário e senha. Eu Ivan já tenho vc deve solicitar seu acesso ou ao Alexandre ou ao TP</p>
+
+<p><img src="assets/bloco_1/tela inicial.PNG" alt="tela inicial" /></p>
+
+<p><br></p>
+
+<h3>Interface de Produtos no tiny:</h3>
+
+<p>No menu lateral vamos procurar a opção de cadastros -> Produtos</p>
+
+<p><img src="assets/bloco_1/menu-cadastrp-produtos.PNG" alt="alt text" /></p>
+
+<p><br></p>
+
+<p>Uma vez Acessando o menu cairemos na tela de produtos. Essa tela reflete todos os produtos que estão armazenados podendo ou não ter um anúncio no Mercado Livre</p>
+
+<p><img src="assets/bloco_1/tiny-tela-de-produtos-no-sistema.PNG" alt="alt text" /></p>
+
+<h3>Buscanco produtos:</h3>
+
+<p>Você consegue fazer buscas no sitema por produtos utilizando formas diferentes de pesquisa as que mais são usadas são: Título(Descrição) e SKU.</p>
+
+<h4>Buscando por título:</h4>
+
+<p>Digite o título do produto com o filtro <strong>palavra-chave</strong> selecionado:</p>
+
+<p><img src="assets/bloco_1/tiny-busca-por-palavra-chave.PNG" alt="alt text" /></p>
+
+<h4>Buscando por sku:</h4>
+
+<p>Digite o título do produto com o filtro <strong>código</strong> ou <strong>código(parcial)</strong> selecionado:</p>
+
+<p><img src="assets/bloco_1/tiny-busca-por-código.PNG" alt="alt text" /></p>
+
+<p><strong>Uma observação é que em caso de busca por código o sku completo deve ser inserido do contrário, a busca não retornará nada</strong></p>
+
+<br>
+<h3>Já sei abrir o sistema, já sei pesquisar por produtos como q eu cadastro o produto?</h3>
+
+<p>O processo para cadastrar um produto é feito de duas forma:</p>
+
+<p><strong>Inserção de produtos manualmente no sistema</strong> e <strong>Importação de produtos junto a plataforma do ML</strong></p>
+
+<p>Devido a praticidade estamos fazendo isso pela segunda opção: Pegamos os  anúncios do mercado livre e trazemos ele pro sistema criando um produto com base nas características do anúncio.</p>
+
+<h3>Passo a Paso</h3>
+
+<h4>1º Importando novos produtos</h4>
+
+<p>No canto superior clicamos no botão <strong>receber do ecommerce</strong>:</p>
+
+<p><img src="assets/bloco_1/tiny-receber-produto-do-ecommerce.PNG" alt="alt text" /></p>
+
+<hr>
+
+<h4>2º Selecionando os produtos a serem importados</h4>
+
+<p>Uma vez clicado no botão vamos ter 3 opções para importação:</p>
+
+<ul>
+<li>todos os anúncios da minha conta</li>
+<li>somente os anúncios novos</li>
+<li>um anúncio específico</li>
+</ul>
+
+<p>Temos usado o somente anúncios novos devido a demora da importação.</p>
+
+<p><img src="assets/bloco_1/tiny-selecionando-produtos-novos.PNG" alt="alt text" /></p>
+
+<h4>3º Importando os produtos</h4>
+
+<p>Feito o passo anterior basta esperar a importação:</p>
+
+<p><img src="assets/bloco_1/tiny-importando-produtos-novos-do-ml.PNG" alt="alt text" /></p>
+
+<hr>
+
+<h4>4ª Relacionando transformando anúncios em produtos:</h4>
+
+<p>Os anúncios foram importado agora temos que transformar esses anúncios em produtos, para isso clique no botão <strong>relacionar esses anuncios aos seus produtos</strong></p>
+
+<p><img src="assets/bloco_1/tiny-relacionando-anuncios-com-produtos.PNG" alt="alt text" /></p>
+
+<p>Em seguida temos que estabelecer um critério para essa relação e a diretriz é relacionar com o <strong>SKU</strong>.</p>
+
+<p>Como segunda seleção optamos por atualizar informações do produto caso ele já exista, então marca-se <strong>sim</strong> e como opções sequentes <strong>Apenas dados não preenchidos</strong>, <strong>Atualizar o estoque</strong> e <em>*Atualizar imagens e seguimos com o relacionamento.
+ *</em>:</p>
+
+<p><img src="assets/bloco_1/tiny-opções-de-importação.PNG" alt="alt text" /></p>
+
+<h4>5ª Criando novos produtos:</h4>
+
+<p>Ao fim do processo caimos finalmente na criação de novos produtos:</p>
+
+<ul>
+<li>Seguimos com <strong>Criar produtos novos com base nos anúncios</strong></li>
+</ul>
+
+<p><img src="assets/bloco_1/tiny-tela-de-criação-por-importação.PNG" alt="alt text" /></p>
+
+<p>Na sequencia, basta criar os produtos com base nos anúncios.</p>
+
+<p><img src="assets/bloco_1/tiny-criação.PNG" alt="alt text" /></p>
+
+<p><br></p>
+
+<p>Ao final do processo novos produtos serão criados.</p>
+
+<p><img src="assets/bloco_1/tiny-criação-sucesso.PNG" alt="alt text" /></p>
+
+<hr />
+
+<h2>ah mas e agora?!</h2>
+
+<p><img src="assets/john-travolta.gif" alt="alt text" /></p>
+
+<p><br></p>
+
+        </main>
+    </div>
+</body>
+</html>
