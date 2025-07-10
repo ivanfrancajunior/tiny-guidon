@@ -140,3 +140,69 @@ Ao final do processo novos produtos serão criados.
 ![alt text](assets/john-travolta.gif)
 
 <br>
+
+<hr>
+
+# VAMOS CRIAR PRODUTOS A PARTIR DE OUTROS PRODUTOS DO SISTEMA
+
+Primeiro para economizar tempo buscamos no própio sistema por um modelo parecido no exemplo vamos utilizar rodas Gaúchas
+
+![alt text](<assets/bloco_2/tiny-clonando item do sistema.png>)
+
+
+Na sequencia no menu de opções, clonamos o item:
+
+![alt text](assets/bloco_2/clonando-01.png)
+
+
+Escolhemos a opção de clonar:
+
+![alt text](assets/bloco_2/clonando-02.png)
+
+Na sequência, as opções já vem marcadas basta continuar
+
+![alt text](assets/bloco_2/clonando-03.png)
+
+
+Na tela seguinte alguns campos devem ser editados:
+
+**Na aba dados gerais**:
+
+- Descrição
+- Tipo
+- Preço de venda
+- Unidade: UN para unidade e JG para jogo
+- Peso Líquido
+
+![alt text](assets/bloco_2/clonando-4.png)
+
+Na aba **Dados Complementares**
+
+Edite a Descrição complementar e Categoria
+
+![alt text](assets/bloco_2/clonando-05.png)
+
+Na aba **Anúncios** se tiver, adicione o id do anúncio no Mercado Livre
+
+![alt text](assets/bloco_2/clonando-06.png)
+
+<br>
+<br>
+
+Com o produto criado e pro caso de ser unidade, depois temos que acrescer a quantidade de rodas isso fazemos em gerenciar estoque também no menu a esquerda do produto criado:
+
+![alt text](assets/bloco_2/clonando-07.png)
+
+
+Antes de adicionar se certifique que o estoque seja o pronto pra vendas, com isso verificado vamos um lançamento no botão azul no canto superior direito:
+
+![alt text](assets/bloco_2/clonando-08.png)
+
+A partir disso, vamos preencher mais alguns campos:
+
+- Tipo: Entrada
+- Quantidade
+- Preço unitário: Este é o preço de custo da roda
+- Observação: Justifique sempre o lançamento, no nosso caso será Ajuste de estoque imaginando q esse produto estava na tabela mãe mas ainda não estava cadastrado no sistema.
+
+![alt text](assets/bloco_2/clonando-10.png)
